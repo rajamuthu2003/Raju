@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position in css</title>
+
+    <style>
+       .container1{
+            position: relative;
+            top: 2px;
+            left: 5px;
+            background-color: gray;
+        }
+
+        .container2{
+            position: sticky;
+            top: 0px;
+            right: 30px;
+            background-color:red;
+        }
+
+        .container3{
+            position: sticky;
+            top: 10px;
+            bottom: 0px;
+            left :0px;
+            right: 50px;
+            background-color: yellow;
+        }
+        body{
+            height: 2500px;
+    
+        }
+        
+    </style>
+</head>
+<body>
+    <!--
+    position in css:
+     -static (stabel position) (DEFAULT)
+     -Relative (relative path position)
+     -Absolute ( non static parent)
+     -Fixed (locked position)
+     -Sticky (Introduce in css) (top & bottom lock)
+
+     -top
+     -left
+     -right
+     -bottom
+
+    -->
+   <div class="container1">  
+    <section >HTML</section> 
+    <section>CSS</section>
+    <section>Bootstrap</section>
+    <section>JS</section>
+    <section>Python</section>
+  </div>
+
+   
+
+
+    <div class="container2">
+        <h2>Logic First</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nulla.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eaque molestias libero, quos harum est quaerat ullam beatae similique sit temporibus assumenda fugit magnam ad, doloremque provident. Delectus, illo at et dolorem amet nobis quae alias rem sit placeat tempore blanditiis expedita porro iusto libero? Numquam totam sint obcaecati reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eaque molestias libero, quos harum est quaerat ullam beatae similique sit temporibus assumenda fugit magnam ad, doloremque provident. Delectus, illo at et dolorem amet nobis quae alias rem sit placeat tempore blanditiis expedita porro iusto libero? Numquam totam sint obcaecati reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eaque molestias libero, quos harum est quaerat ullam beatae similique sit temporibus assumenda fugit magnam ad, doloremque provident. Delectus, illo at et dolorem amet nobis quae alias rem sit placeat tempore blanditiis expedita porro iusto libero? Numquam totam sint obcaecati reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eaque molestias libero, quos harum est quaerat ullam beatae similique sit temporibus assumenda fugit magnam ad, doloremque provident. Delectus, illo at et dolorem amet nobis quae alias rem sit placeat tempore blanditiis expedita porro iusto libero? Numquam totam sint obcaecati reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eaque molestias libero, quos harum est quaerat ullam beatae similique sit temporibus assumenda fugit magnam ad, doloremque provident. Delectus, illo at et dolorem amet nobis quae alias rem sit placeat tempore blanditiis expedita porro iusto libero? Numquam totam sint obcaecati reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eaque molestias libero, quos harum est quaerat ullam beatae similique sit temporibus assumenda fugit magnam ad, doloremque provident. Delectus, illo at et dolorem amet nobis quae alias rem sit placeat tempore blanditiis expedita porro iusto libero? Numquam totam sint obcaecati reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eaque molestias libero, quos harum est quaerat ullam beatae similique sit temporibus assumenda fugit magnam ad, doloremque provident. Delectus, illo at et dolorem amet nobis quae alias rem sit placeat tempore blanditiis expedita porro iusto libero? Numquam totam sint obcaecati reiciendis.</p>
+    </div>
+
+    <div class="container3">
+        <h2>Logic</h2>
+        <section>Tamil</section>
+        <section>English</section>
+        <section>kanada</section>
+        <section>Telugu</section>
+    </div>
+    
+</body>
+</html>

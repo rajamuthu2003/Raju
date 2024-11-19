@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Statement</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 40px 300px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightcyan;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        button {
+            margin-left: 30px;
+            padding: 5px 20px;
+            background-color: #007bff;
+            color: white;
+            border :2px solid lightcoral;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #024b9a;
+        }
+
+        input {
+            width: 100px;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Statement</h1>
+        <div class="form">
+            <span>Pay amount: 
+                <input type="number" id="payInput" placeholder="Enter amount" />
+                <button id="payButton">Pay</button>
+            </span>
+
+            <span>Loan amount: 
+                <input type="number" id="loanInput" placeholder="Enter amount" />
+                <button id="loanButton">Loan</button>
+            </span>
+
+            <div>Your account balance: <span id="balance">500</span>
+                <button id="checkButton">Check</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let payButton = document.getElementById('payButton');
+        let loanButton = document.getElementById('loanButton');
+        let checkButton = document.getElementById('checkButton');
+
+        let accountBalance = 6500; // Initial balance amount 
+
+        document.getElementById('balance').innerText = accountBalance;
+
+       
+        // payInput 
+
+        payButton.addEventListener('click', () => {
+            let payAmount = parseFloat(document.getElementById('payInput').value);
+
+            if (payAmount > 0) {
+                accountBalance -= payAmount;
+                
+                alert(`Paid ${payAmount}. New balance: ${accountBalance}`);
+                document.getElementById('balance').innerText = accountBalance;
+                document.getElementById('payInput').value = '';
+            } else {
+                alert('Please enter a valid amount.');
+            }
+        });
+
+        // LoanInput
+
+        loanButton.addEventListener('click', () => {
+            let loanAmount = parseFloat(document.getElementById('loanInput').value);
+
+            if (loanAmount > 0) {
+                accountBalance += loanAmount;
+
+                alert(`Took loan of ${loanAmount}. New balance: ${accountBalance}`);
+                document.getElementById('balance').innerText = accountBalance;
+                document.getElementById('loanInput').value = '';
+            } else {
+                alert('Please enter a valid amount.');
+            }
+        });
+
+        // checkButton
+
+        checkButton.addEventListener('click', () => {
+            alert("Your account balance is:"+accountBalance);
+        });
+    </script>
+</body>
+</html>

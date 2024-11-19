@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangular animation </title>
+    <style>
+        div {
+            width: 0;
+	        height: 10px;
+	        border-left: 95px solid transparent;
+	        border-right: 95px solid transparent;
+	        border-bottom: 150px solid green;
+            text-align: center;
+            line-height: 200;
+            position: fixed;
+    
+            animation-name:triangular;
+            animation-delay: 1s;
+            animation-duration:2s;
+            animation-iteration-count: 3;
+             }
+             @keyframes triangular{
+                from{
+                    transform:rotate(360deg);
+                    left: 0%;
+                }
+                to{
+                    transform:rotate(0deg);
+                    left: 80%;
+                }
+             }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            Captain Jacksparrow
+            <p>welcome to the capptain</p>
+        </div>
+    </section>
+    
+</body>
+</html>

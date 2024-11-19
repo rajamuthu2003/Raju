@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operator</title>
+</head>
+<body>
+    
+    <!-- 
+    Spread Operato(...):
+    
+    -->
+
+    <script>
+        const number=[1,2,3,4,5,6];
+
+        const copy=number;
+
+        console.log(number);
+        console.log(copy);
+
+        // Spread operator:
+
+        const cArray=[...number];
+        console.log(cArray);
+
+        console.log(number===copy); //true
+        console.log(number===cArray); //false
+
+        // Combining Multiple array:
+
+        const arr1=[1,2,3,4];
+        const arr2=[5,6,7,8];
+        const arr3=[4,3,2,1];
+
+        const arr4=[...arr1,...arr2,...arr3];
+        console.log(arr4);
+
+        // Objects: 
+
+         const person={name:"Raju", age:22,course:"Python"};
+         console.log(person);
+
+         const update={...person,age:25};
+         console.log(update);
+
+        const N={name:"rajii",age:23,course:"Testing",b:54};
+        console.log(N);
+
+        // const Name={...N,course:"Java"};
+        // console.log(Name);
+
+        const updatep={...N,age:21,name:"Raji"};
+        console.log(updatep);
+
+        const copyo={...person};
+        console.log(copyo);
+        console.log(person===copyo);
+        
+
+        function multi(a,b,c){
+            return a+b+c;
+        }
+        const n=[4,4,2];
+
+        const result=multi(...n);
+        console.log(result);
+        
+        
+        
+        
+
+        
+
+        
+
+
+
+
+
+
+        
+        
+        
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>

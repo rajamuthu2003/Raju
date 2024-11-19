@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        section,div{
+            border: 1px solid rgb(7, 248, 7);
+        } 
+        section{
+            transform: translate(200px);
+            padding: 5px;
+        }
+        div:hover{
+            transform: scale(1,1);
+            background-color: yellow;
+            color: red;
+        }
+        figure{
+            transform: rotate(20deg); 
+           transform: skew(15deg);
+            
+        } 
+
+        section:hover{
+            background-color: rgb(118, 228, 28);
+            border: 10px solid rgb(245, 13, 67);
+            
+    
+            /* for seeing th transition */
+            transition-property: background-color,border;
+            transition-delay: 1s;
+            transition-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    Transform:
+    - translate(x-axis,y-axis) (move the element)
+    - scale(zoom level of element)
+    - rotate(rotate deg 360')
+    - skew(x-axis,y-axis deg 30',40')
+
+    Transition:
+    - property( background-colour  , border) (mention this property, particular element)
+    - delay (how many sec,start run property)
+    - duration(started to sec to element run)
+
+
+    -->
+
+    <section>css3</section>
+    <section>Variable function</section>
+    <div>Python</div>
+
+    <figure>
+        <img src="../ASSETS/image/design2.jpg" alt="image">
+        <figcaption>design</figcaption>
+    </figure>
+    
+</body>
+</html>

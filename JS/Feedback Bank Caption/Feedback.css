@@ -1,0 +1,9 @@
+*{
+    background-color: pink;
+}
+body{
+    margin: 0;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}

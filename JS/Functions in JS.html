@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in java script (13-08-24)</title>
+</head>
+<body>
+    <!--
+      Functions in java script: 
+      Function in JS are block of code  that can be defined and called at any point of time.
+       
+      To define  a function  in JS, we need a keyword "function".
+
+
+    syntax:
+      
+      function_keyword  function_name(para1,para2){
+      
+       //function logic
+
+       function greet(a,b){
+        console.log(a+b);
+       }
+        greet();
+      
+      }
+
+      To call a funcion:
+           function _name(value1,value2):
+
+           Types:
+            
+             -function with parameter:
+             -function without a parameter:
+             -function with return statement:
+
+             -function with default parameters
+             -Named function/function with a name
+             -Anonymous function/function without a name
+             -variable function
+             -callback function
+             -nested function
+             -recursive function
+             -IIFE(Immediately invoked function expression)
+             -ES6+
+                 -Arrow function
+
+       
+       -->
+
+       <script>
+
+
+        syntax:
+      
+   //   function_keyword  function_name(para1,para2){
+   //   
+   //    //function logic
+   //
+   //    function greet(a,b){
+   //     console.log(a+b);
+   //    }
+
+   //     greet(4+8); =12
+   //   
+   //   
+
+         
+       // function:
+
+          function greet(){
+            console.log("Hello,Good morning");
+            console.log("Good aftrernoon");
+            console.log("Welcome to logic function");
+            
+            
+          }
+            greet();
+
+            greet();
+
+    //  function :
+
+         function add(a,b){
+          console.log(a*b);
+          
+           
+         }
+
+           add(7,16);
+           
+   
+           add(45,6);
+
+       </script>
+    
+
+      <script>
+
+        //function with a parameter Ex1:  
+
+        function total(p,gp){
+          let tp=p+(p*gp/100);
+          console.log(tp);
+          
+         }
+         total(1000,12);
+
+
+        //function with a parameter Ex2
+
+         function value(t,r){
+          let fp=t+(t*r/100)
+          console.log(fp);
+          
+         }
+         value(2300,7);
+
+
+       //function without a parameter Ex1:
+
+         function totalprice(){
+
+          let tp=10000;
+          let gp=12;
+
+          let ts=tp+(tp*gp/100);
+
+          console.log(ts);
+          
+         }
+
+         totalprice();
+
+      //function without parameter Ex2:
+
+         function gst(){
+
+          let f=50000;
+          let k=2.8;
+
+          let i=f+(f*k/100);
+
+          console.log(i);
+          
+         }
+
+         gst();
+
+       
+
+    //  function with return statement Ex1:
+       
+         function rate(g,s){
+          let b=g+(g*s/100);
+          return b;
+         }
+         let a=rate(12000,4);
+         let v=rate(3500,7);
+         
+         console.log(a);
+         console.log(v);
+         console.log(a,v);
+
+         //function with return statement Ex2:
+
+         function high(f,h){
+          let k=f+(f*h/100);
+          return k;
+         }
+         let b=high(14000,4);
+
+         console.log(b);
+         
+
+         //function with default parameters Ex1:
+
+         function gst(p,gp=5) {
+          let total=p+(p*gp/100);
+          return total;
+         }
+         let r1=gst(4500);
+         let r2=gst(30000,5);
+         console.log(r1,r2);
+         
+
+         //Ex2:
+          
+         function greet(s,k=5){
+          let total=s+(s*k/100);
+          return total;
+         }
+
+         let k1=greet(9000,20);
+         let k2=greet(8000);
+
+         console.log(k1,k2);
+
+         //Ex3:
+
+         function hlo(a,b){
+          let total=(a*2)+(a+b);
+          return total;
+         }
+
+         let e1=hlo(2,9);
+
+         console.log(e1);
+
+
+         // Anonymous function:
+
+         setTimeout(function(){
+          console.log("Welcome to my page");
+
+         },2000);
+
+
+         let l=function(){
+          console.log("Hello everyone");
+          
+         }
+    /*     //alert:
+
+         setTimeout(function(){
+         alert("Welcome Raju")
+          } ,2000);
+        
+        //prompt:
+
+        setTimeout(function(){
+          prompt("Enter your name")
+        },1000);  */
+
+  
+         //Entire function printed(l)//
+         console.log(l);
+         
+         
+        
+         let x=function(a,b,c){
+          console.log(a+b+c);
+          
+         }
+         x(48,12,75);
+
+
+         //callback functioon:
+
+         function greet3(a){
+          console.log("Hello Bro");
+          a();
+          
+         }
+
+         function greet4(){
+           console.log("Thanks you");
+           
+         }
+
+         function greet5(){
+           console.log("Advantages");
+           
+         }
+
+         greet3(greet4);
+         greet5;
+
+
+      (function(){
+        var x=56;
+        console.log(x);
+        
+      })
+     ();
+
+     let n=(a,b,c,d)=>(a+b+c+d)/4;
+     
+    console.log (n(9,5,6,4));
+
+
+
+    function sum1(m){
+      console.log("Welcome");
+      m() ;
+    }
+
+    function sum2(){
+      console.log("Everyone");
+      
+
+    }
+
+    sum1(sum2);
+
+
+    //Nested function:
+    
+   // Ex:1
+
+    function outerfunc(){
+     let outer=("Sign in your page");
+
+     function innerfunc(){
+     console.log(outer);
+     }
+     
+     innerfunc();
+
+    }
+    outerfunc();
+
+   // Ex2:
+
+   function inn(){
+    let w=("Make your notes");
+
+    function outt(){
+      console.log(w);
+      
+    }
+    inn();
+   }
+   outt();
+
+
+   //Recursive function:  (6!,5!,4!,3!,2!,1!)
+   
+   
+        function factorial(q){
+    if (q===0){
+        return 1;
+    }else{
+      return q*factorial(q-1);
+
+    }
+
+   }
+   console.log(factorial(5));
+   
+    
+   
+   
+
+
+
+      </script>
+</body>
+</html>

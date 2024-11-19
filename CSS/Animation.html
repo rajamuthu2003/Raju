@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container1{
+            border: 10px solid rgb(11, 154, 144);
+            background-color: whitesmoke;
+            padding: 30px;
+            border-radius:50%;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 300px;
+            position: fixed;
+    
+            animation-name:rotateanim;
+            animation-delay: 1s;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotateanim{
+            from{
+                transform: rotate(0deg);
+                left: 0%;
+
+            }
+            to{
+                transform: rotate(360deg);
+                left: 70%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--
+    Animation:
+     @keyformes
+    -->
+     <section>connect</section>
+    <div class="container1">Loading</div>
+    
+</body>
+</html>
+
+

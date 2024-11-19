@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            width: 28%;
+            padding: 100px;
+            margin-left: 350px;
+        }
+    </style>
+</head>
+<body>
+    <!-- login form -->
+    <form method="get" action="#" autocomplete="off">
+        <!-- <label for="user">Username</label> -->
+        <input type="text" name="username" id="user" placeholder="Enter Username" required />
+        <input type="password" name="pwd" placeholder="Enter Password" required/>
+        <input type="hidden" name="country" value="+91" />
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="Others" value="others" />
+        <label for="Others">Others</label>
+        <br>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skills" id="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="skills" id="css">
+        <label for="Javascript">JS</label>
+        <input type="checkbox" name="skills" id="Javascript">
+        <label for="java">JAVA</label>
+        <input type="checkbox" name="skills" id="java">
+        <label for="python">PYTHON</label>
+        <input type="checkbox" name="skills" id="python">
+        <br>
+        <input type="color" name="customcolor"/>
+        <input type="email" name="useremail" placeholder="Email ID:" id="useremail" required>
+        <input type="month"  name="dom" id="dom">
+        <input type="search" placeholder="Search Box" name="usersearch" id="usersearch">
+        <input type="range" name="price" id="pricerange">
+        <select>
+            <option value="">...Select...</option>
+            <option value="in" selected>India</option>
+            <option value="usa">United states Of America</option>
+            <option value="uk">United Kingdom</option>
+            <option value="uae">United Arab Emirates</option>
+            <option value="Ch">China</option>
+        </select>
+        <input type="text" name="mobile" placeholder="TEXT" required>
+        <input type="text" id="phone" name="phone" pattern="^(6|7|8|9)\d{9}$" placeholder="Phone" required>
+        <input type="submit"  value="submit" formmethod="post"/>
+        <input type="reset" value="Reset to Default">
+        <!-- <button>Login</button> -->
+     </form>
+    
+</body>
+</html>

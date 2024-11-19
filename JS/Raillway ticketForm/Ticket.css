@@ -1,0 +1,132 @@
+
+*{
+    font-family: sans-serif;
+}
+body{
+    background-image:url(./Train-BG.png);
+    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container-form{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: 85vh;
+    width:50%;
+    margin: 20px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    opacity: .7;
+
+}
+.status{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2,1fr);
+    /* background-color: blueviolet;  */
+    text-align: center;
+    padding: 0px;
+}
+.pnr{
+     background-color: rgb(25, 25, 117);
+     width: 60%;
+     padding: 10px;
+     margin-top: 20px;
+     font-weight: bolder;
+     font-size: 19px;
+     color: white;
+     margin-left: 60px;
+}
+.charts{
+    background-color:rgb(25, 25, 117);
+     width: 90%;
+     margin-top:20px;
+     margin-left: 60px;
+     padding: 10px;
+     font-weight: bolder;
+     font-size: 15px;
+     letter-spacing: 2px;
+     color: white;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(25, 25, 117);
+}
+#Classes,#gender{
+    width: 99%;
+    font-size: 17px;
+}
+.index{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 10px;
+    gap: 10px;
+    width: 85%;
+    background-color: ble;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.input:hover{
+    border: 2px solid red;
+
+    
+}
+.input{
+    /* background-color: lightcoral; */
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 17px;
+    width: 90%;
+    margin-left: 10px;
+    border-radius: 10px;
+    border:2px solid black;
+}
+input::placeholder{
+    color: black;
+    font-size: 17px;
+}
+button{
+    margin-left: 50px;
+    border-radius: 20px;
+    border: none;
+
+}
+#submit{
+    background-color: blue;
+    padding:10px 50px;
+    font-weight: bold;
+    color: white;
+}
+#check{
+    background-color: green;
+    color: white;
+    font-weight:bold;
+    padding:10px 50px;
+}
+#cancel{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding:10px 50px;
+}
+/* #date{
+    background-color: aqua;
+} */
+
+
+/* .choose{
+    padding: 17px;  
+    margin-left: 30px;
+}
+
+.choose input{
+    margin: 8px ;
+} */
+/* label{
+    color:rgb(14, 21, 99);
+} */

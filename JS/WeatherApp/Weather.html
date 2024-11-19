@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Monitor App using JS </title>
+    <!-- Link Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link external css -->
+    <link rel="stylesheet" href="./Weather.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search">
+                <div class="search-box">
+                    <input type="text" class="input-box" placeholder="Enter Your Location">
+
+                    <button id="search" class="btn-Submit fa-solid fa-magnifying-glass"></button>
+                </div>
+            </div>
+
+            <div class="weather-box">
+                <img src="./Image/Snowfall.gif" alt="Clouds" class="weather-img">
+                <div class="city"></div>
+
+
+                <div class="temp">
+                    <p class="temperature">0<sup>°C </sup></p>
+                    <p class="description">Light Rain</p>
+                </div>
+                <div class="class"></div>
+
+                <div class="weather-details">
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div class="text">
+                            <span id="humidity">43%</span>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                            <span id="wind">1.2Km/H</span>
+                            <p>Wind Speed</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="max_min">
+                    <div id="max"><span>Max_temp:</span>390°C</div>
+                    <div id="min"><span>Min_temp</span>203°C</div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Linking JS -->
+
+    <script src="./Weather.js"></script>
+</body>
+
+</html>

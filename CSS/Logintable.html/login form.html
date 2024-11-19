@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>
+        form {
+            border: 2px solid blue;
+            width:330px;
+            padding: 30px;
+            margin: 170px;
+            margin-left: 470px;
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px blue;
+        }
+
+        div input {
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .button{
+            margin: 50px 120px;
+            height: 35px;
+            width: 100px;
+            background-color: blue;
+            color: whitesmoke;
+        }
+        .button:hover{
+            color: black;
+            background-color: red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        span {
+            color: red;
+        }
+
+        h4{
+            margin: 40px;
+            text-align: center;
+            color: black;
+        }
+        h4 a{
+            color: blue;
+            text-decoration-line: none;
+        }
+        .mandatory{
+            color: red;
+        }
+        .dNone{
+            color: red;
+            display: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <h1>Login form:</h1>
+        <h3>
+            <div>
+                <label for="email">Email: <span class="mandatory">*</span></label>
+                <input type="email" name="email" id="email" placeholder="Enter your email"> <br>
+                <span class="dNone" id="eErr">Please enter your email !</span>
+                <br>
+                <label for="Psw">password: <span class="mandatory">*</span></label>
+                <input type="password" name="Psw" id="Psw" placeholder="Enter your password">
+                <span class="dNone" id="pErr">Please enter your password !</span> <br>
+                <input type="button" name="submit" id="Login" value="Login" class="button">
+                </div>
+        </h3> 
+        <h4>Forgot password? <a href="#">Click here.</a></h4>
+        <h4>Creat new account <a href="#">Click here.</a></h4> 
+    </form> 
+       
+
+    <script>
+        document.getElementById('email').addEventListener('click'),()=>{
+            const email=getElementById('email');
+            const pswd=getElementById('psw');
+            email=document.getElementById('email').value;
+            pswd=document.getElementById('Psw').value;
+
+            if(email==''){
+                document.getElementById('eErr').style.display='block';
+            }else{
+                document.getElementById('eErr').style.display='none';
+            }
+
+            if(pswd==''){
+                document.getElementById('pErr').style.display='block';
+            }else{
+                document.getElementById('pErr').style.display='none';
+            }
+            
+        }   
+    </script>
+</body>
+
+</html>

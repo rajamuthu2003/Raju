@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Indian Railway Form</title>
+    <link rel="icon" href="../../ASSETS/image/IRCTC logo.png">
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS link -->
+     <link rel="stylesheet" href="./Ticket.css">
+
+
+</head>
+<body>
+    <form>
+    <div class="container-form">
+        <div class="status">
+            <div class="pnr"><span><i class="fa-regular fa-calendar-check"></i> </span>PNR STATUS</div>
+            <div class= "fa-solid fa-clipboard-list charts"> CHARRTS &VACANCY</div>
+        </div>
+        <h1>BOOK TICKET</h1>
+        <div class="index">
+            <input type="text" class="input" name="From" placeholder="Enter Your Name" id="name">
+            <input type="text" class="input" name="From" placeholder="Enter Your Last Name" id="lastname">
+            <input type="text" class="input" name="From" placeholder="Enter Your Age" id="age">
+            <input type="date" class="input" name="Date" id="date" >
+            <select id="gender" class="input">
+                <option value="Gender">GENDER</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+            <select id="Classes" class="input">
+                <option value="All Classes">All Classes</option>
+                <option value="1st class AC">1st class AC</option>
+                <option value="2nd class AC">2nd class AC</option>
+                <option value="1st class SL">1st class SL</option>
+                <option value="2nd class SL">2nd class SL</option>
+            </select>
+            <!-- <input type="text" class="input" name="All Classes" placeholder="All Classses" id="opt"> -->
+            <!-- <input type="text" class="input" name="GENERAL" placeholder="Gender" id="gen"> -->
+            <input type="text" class="input" name="From" placeholder="From" id="from">
+            <input type="text" class="input" name="to" placeholder="TO" id="to">
+        </div>
+
+        <!-- <div class="choose">
+             <input type="checkbox" name="person">
+             <label for="">Personal With Disability Concession</label>
+             <input type="checkbox" name="Flexible">
+             <label for="">Flexible With Date</label><br>
+             <input type="checkbox" name="available">
+             <label for="">Train with Available Berth</label>
+             <input type="checkbox" name="Pass Concession">
+             <label for="">Railway Pass Cooncession</label>
+        </div> -->
+        <div class="button">
+            <button id="check">Preview</button>
+            <button id="submit">Submit</button>
+            <button id="cancel">Cancel</button>
+
+        </div>
+    </div>
+</form>
+
+<!-- /Link JS -->
+ <script src="./Ticket.js"></script>
+
+
+</body>
+</html>

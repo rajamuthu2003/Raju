@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design in css</title>
+    <style>
+
+        header{
+            
+            background-color:yellowgreen;
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            color: black;
+            width: 100%;
+        }
+        ul{
+            font-size: 20px;
+            text-align:left;
+        }
+        
+       .container7{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 1px;
+            align-items: flex-start;
+
+          }   
+        /*media graph */
+
+        
+
+        @media only screen and (min-width:720px) and (max-width:1000px){
+           
+            .container7{
+                grid-template-columns: repeat(3,1fr);
+            }
+            
+        }
+        @media only screen and (min-width:540px) and (max-width:720px){
+            .container7{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media only screen and (min-width:0) and (max-width:540px){
+            .container7{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        @media only screen and (min-width:0) and (max-width:720px){
+            header{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        @media only screen and (min-width:0) and (max-width:720px){
+            footer{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+            
+        div{
+            background-color: white;
+            width: 95%;
+            height: 92%;
+            padding: 15px;
+            left: 15px;
+            right: 10px;
+        }
+        
+        
+        footer{
+            background-color: black;
+            color: white;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            padding: 20px;
+            width:100%
+        }
+        h2{
+            color: gold;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .container8{
+            position: relative;
+            left: 20px;
+            top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+        <!--Header file-->
+        <header>
+             <section>
+                <img src="../ASSETS/image/bird1.jpg" alt="NATURAL PICTURE">
+             </section>
+             <section>
+                <ul>3D PICTURE</ul>
+              </section>
+              <section>
+                <ul>4K</ul>
+              </section>
+              <section>
+                <ul>8K</ul>
+              </section>
+              <section>
+                <ul>ULTRA HD</ul>
+              </section>
+              <section>
+                <ul>ANIMALS PICTURE</ul>
+              </section>
+              <section>
+                <ul>BIRDS PICTURE</ul>
+              </section>                     
+        </header> 
+         
+    
+    <!--Responsive web design:-->
+       <!-- @media -->
+   
+  
+       <section class="container7">
+
+        <div><img src="../ASSETS/image/nature2.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature3.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature3.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature4.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature1.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature2.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature3.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature4.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature5.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature6.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature7.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature7.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature8.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/nature9.jpg" alt="NATURAL"></div>
+        <div><img src="../ASSETS/image/draw1.jpg" alt="DRAW"></div>
+        <div><img src="../ASSETS/image/draw2.jpg" alt="DRAW"></div> 
+        <div><img src="../ASSETS/image/nature2.jpg" alt="NATURE"></div>
+        <div><img src="../ASSETS/image/design2.jpg" alt="DESIGN"></div>
+        <div><img src="../ASSETS/image/design3.jpg" alt="DESIGN"></div>
+        <div><img src="../ASSETS/image/design4.jpg" alt="DESIGN"></div>
+
+    </section>    
+</body>
+</html>
+
+
+<!--Footer-->
+
+ <footer>
+    <section style="height: 80%;">
+        
+        <img src="../ASSETS/image/animal1.jpg" alt="Bird23">
+        <figcaption style="color: maroon;">Natural photography</figcaption>
+        <a style="color: rgb(201, 245, 42);">SOLOGAN RN COMPANY</a>
+    </section>
+    
+    <section class="container8">
+        <h2>Natural</h2>
+        <ul>
+            <li>Weebly theams</li>
+            <li>Pre-sale FAQs</li>
+            <li>Submit a tickets</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Animals</h2>
+        <ul>
+            <li>Servics</li>
+            <li>Theme Tweak</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Birds</h2>
+        <ul>
+            <li>Showcase</li>
+            <li>Widgetkit</li>
+            <li>Support</li>
+            <hr>
+        
+            <a href="../ASSETS/image/design1.jpg">Love</a>
+        </ul>
+    </section>
+ </footer>
+

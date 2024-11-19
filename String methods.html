@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<body>
+    <!--
+    String Methods:
+      -length ():
+      -indexOf ():
+      -sub string ():
+
+      -toUppercase():
+      -toLowercase():
+
+      -replace():
+      -replaeAll():
+
+      -charAt():
+      //single charecter//
+       
+      concat():
+      slice():
+      trim():
+        -trim Start();
+        -trim End();
+      split():
+
+
+    -->
+    <script> 
+       //length:
+        var sand="Raja Muthu"
+        console.log(sand.length);  //how letter claculate (0,1,2...n).
+
+
+        //indexOf:
+        var z="suresh Kumar"
+        console.log(z.indexOf("umar"));  // u befor how many letters clculate(0,1,2,3..n).
+        
+    </script>
+      <!-- substring -->
+    <script>
+        //sub string:
+        var a="Jana Moorthy"
+        console.log(a.substring(5));  //0,1,2,3,4,.... next print
+        console.log(a.substring(2,8)); //end -1; 2 to 08 end -1.
+        
+        
+    </script>
+    <script>
+
+        //-toUppercase():
+        //-toLowercase():
+
+        var t="ThiRu MuruGan"
+        console.log(t.toUpperCase()); //all leters are captial
+        console.log(t.toLowerCase());  //all leters are small.
+        
+    </script>
+       <!-- Replace -->
+    <script>
+       var x="Welcome to my page.Welcome to Raju.Have a nice page nice page"
+       console.log(x.replace("Welcome","Get out")); //purticular word 1st words only replace (__ , __)
+
+       console.log(x.replaceAll("page","Bio"));   //purticular word all words are replace (__ , __)
+       
+    </script>
+       <!-- charAt -->
+    <script>
+        var s="kavi yarasu"
+        console.log(s.charAt(7));  //mention (__),letter.
+        
+    </script>
+      <!-- concat -->
+    <script>
+        var str1="Welcome"
+        var str2=" to my page 123"
+        var str3=str1.concat(str2);   //concat is add any var. d=a.concat(b)
+
+        console.log(str3);
+        
+    </script>
+
+    <script>
+        var c="Hello all.Hello students.Hello everyone."
+        console.log(c);
+        
+        console.log(c.slice(6,27)); //cut the mentioned purticular value.(__,__).
+        
+    </script>
+
+     <!-- Trim -->
+    <script>
+        var d="     Demo JS    "
+        console.log(d);
+        console.log(d.trim());    //Arrange properly
+        
+        var x="Welcome to all"
+        console.log(x.split('    '));  //  split or suprate words.
+        
+    </script>
+</body>
+</html>
