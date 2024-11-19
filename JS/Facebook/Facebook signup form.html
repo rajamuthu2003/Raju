@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-signup form</title>
+    <!--Font Icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Facebook.css">
+</head>
+<body>
+    <!--form start-->
+    <section class="Signup">
+        <from action="#" method="post">
+            <i class="fa-solid fa-xmark icon3"></i>
+            <h1>Sign Up</h1>
+            <p class="p1">it's quick and easy.</p>
+            <hr>
+        <input class="input1" type="text" name="firstname" placeholder="First Name" required/>
+        <input class="input1"  type="text" name="surname" placeholder="Surname"/><br>
+        <input class="input2" type="email" name="mobile or email" placeholder="Mobile Number or email address"/><br>
+        <input class="input2" type="password" name="newpassword" placeholder="New Password"/>
+         <br>
+         <!--DOB-->
+         <label class="lel1">birthday</label>&nbsp;<i class="fa-solid fa-circle-question icon1"></i>
+         <br>
+
+         <select name="date" id="date" class="select">
+         </select>
+         <select name="month" id="month" class="select">
+         </select>
+         <select name="year" id="year" class="select">
+         </select> <br>
+    
+         <label class="gen">Gender</label>&nbsp;<i class="fa-solid fa-circle-question icon1"></i><br>
+        <section class="row">
+         <div class="female">
+         <label for="female">Female</label>
+         <input type="radio" name="gender" value="female" id="female">
+         </div>
+         <div class="male">
+         <label for="male">Male</label>
+         <input type="radio" name="gender" value="male" id="male">
+         </div>
+         <div class="custom">
+         <label for="custom">Custom</label>
+         <input type="radio" name="gender" value="custom" id="custom">
+         </div>
+        </section>
+         <p class="para2">People who use our service may have uploaded your contact information to Facebook.<a href="#">Learn more.</a></p>
+         <p class="para2">By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt-out at any time.</p>
+         <button>Sing Up</button>
+     </from>
+    </section>
+    <h1 class="final">Thank YOU!</h1>
+    <!--end form page-->
+
+    <script src="facebook.js">
+      
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API GET and POST method</title>
+</head>
+<body>
+
+    <!-- 
+     
+     API methods:
+
+      -GET:  (Default method)
+      -POST
+     
+    -->
+<!--     
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/posts',{
+            method:'GET'
+        })
+        .then(res=>res.json())
+        .then(result=>console.log(result)
+        )
+
+        fetch('https://jsonplaceholder.typicode.com/albums',{
+            method:'POST'
+        })
+        .then(res=>res.json())
+        .then(result=>console.log(result)
+        )
+    </script> -->
+
+    <script>
+         //POST
+
+         const post={
+            userId:25,
+            id:101,
+            title:"New Project",
+            body:"This is the body of the new post"
+         };
+
+         fetch('https://jsonplaceholder.typicode.com/posts',{
+            method:'post',
+            headers:{
+                'content-Type':'application/json'
+            },
+            body:JSON.stringify(post)
+         })
+
+         .then(res=>res.json())
+         .then(result=>console.log(result)
+         )
+
+
+    </script>
+
+
+</body>
+</html>

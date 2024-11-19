@@ -1,0 +1,115 @@
+*{
+    font-family: "press start 2p",system-ui;
+    font-size:10px; 
+
+}
+body{
+    background-color: black ;
+    color: whitesmoke;
+}
+.game{
+   margin-top: 5%;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   flex-basis: 50%;
+   margin-top: 0%;
+}
+#again{
+    width: 20%;
+    padding: 15px;
+    font-size: x-large;
+    background-color: white;
+    font-weight: bold;
+    height: 1%;
+}
+.bw{
+    font-weight: bold;
+    font-size: 22px;
+}
+h1{
+    text-align: center;
+    font-size: x-large;
+}
+hr{
+    position: relative;
+    border: 2px solid whitesmoke;
+}
+.line{
+    position: relative;
+    margin-top: 5%;
+}
+.subline{
+    top: 50%;
+}
+.box{
+    top: 2%;
+    left: 50%;
+    position: absolute;
+    border: 1px solid whitesmoke;
+    transform: translate(-50%,-50%);
+    width: 90px;
+    height: 60px;
+    text-align: center;
+    size: 20px;
+    background-color: rgb(184, 24, 24);
+    
+}
+#mark{
+    position: relative;
+    top: 15%;
+    left: 5%;
+    font-size: 40px;
+    font-weight: bold;
+    /* background-color: rgb(197, 89, 89); */
+}
+#emptybox{
+   background-color: black;
+   color: whitesmoke;
+   width: 12%;
+   height: 40px;
+   padding: 5px;
+   border: 2px solid whitesmoke;
+
+}
+.EN{
+    font-weight: bold;
+    font-size: x-large;
+}
+.number{
+    margin-top: 95px;
+    margin-left: 95px;
+}
+#check{
+    margin-top: 15%;
+    font-size: x-large;
+    width: 12%;
+    padding: 10px;
+    margin-left: 95px;
+    margin-top: 20px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+
+}
+.score{
+    margin-left: 75%;
+    transform: translate(-30%,-100%);
+    font-size:x-large;
+    font-weight: bold;
+}
+#highscore{
+    margin-top: 10%;
+}
+
+/* Hover  */
+#again:hover{
+    background-color: black;
+    color: red;
+    border: 1px solid whitesmoke;
+}
+  /* #check:hover{
+    background-color: lightcoral;
+    color: red;
+    border: 1px solid whitesmoke; 
+}   */

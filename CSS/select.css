@@ -1,0 +1,12 @@
+h2{
+    color:red;
+    background-color: yellow;
+    font-style: inherit;
+    text-align:center;
+}
+p{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-style: oblique;
+}

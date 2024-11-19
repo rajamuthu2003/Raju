@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local  and Session storage in JS</title>
+</head>
+<body>
+    <!-- 
+    Presistence:
+    performance:
+    Offline support:
+
+    Local Storage:
+    Session Storage:
+
+    Methods:
+
+       -setItem:
+       -getItem():
+       -removeItem():
+       -clear():
+       -key (index):
+       -length
+    
+    
+    -->
+    <script>
+
+    //setItem: local Storage.setItem('key','value');
+
+       localStorage.setItem("Flags","India");
+       localStorage.setItem("UserName1","Mani");
+       localStorage.setItem("UserName2","ThiruMurugan")
+
+    //getItem: localStorage.getItem("key");
+    const name=localStorage.getItem("UserName2");
+    console.log(name);
+    const name1=localStorage.getItem("UserName1")
+    console.log(name1);
+    
+    
+
+    // removeItem():localStorage.removeItem("key");
+
+    // const a=localStorage.removeItem("UserName1");
+    // console.log(a);
+    // localStorage.removeItem("UseName2");
+
+    // clear():
+    //  localStorage.clear();
+
+     const b=localStorage.length;
+     console.log(b);
+    //  localStorage.clear();
+
+    // object:
+    const user1={name:"Raju",age:21,From:"DPI"};
+    console.log(user1);
+
+    localStorage.setItem ("object1",JSON.stringify(user1)); //object to string :
+
+    const object1=localStorage.getItem("object1");
+    console.log(object1);
+    
+    
+
+     
+    
+  
+    
+
+
+    </script>
+
+
+
+</body>
+</html>

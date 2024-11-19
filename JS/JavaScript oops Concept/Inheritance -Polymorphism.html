@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Overriding</title>
+</head>
+<body>
+
+    <script>
+        class Employee{
+            login(time){
+                console.log(`Employee has logged in ${time} PM.`);
+                
+            }
+            logout(time){
+                console.log(`Employee has logged out ${time} PM.`);
+                
+            }
+            leave(leave){
+                console.log(`Employee take leave ${leave} days. `);
+                
+            }
+        }
+        // let raju=new Employee();
+        // raju.leave(5);
+
+        // raju.login(2);
+
+        // raju.logout(4);
+
+        // programmer
+
+        class programmer extends Employee{
+            
+            request(work){
+                console.log(`Employee take ${work} project of works.`);
+                
+            }
+        }
+
+        let mani=new programmer();
+
+        mani.leave(21);
+        mani.request(32);
+        mani.login(12.15);
+        mani.logout(2);
+
+
+
+       // extends:
+
+    //     class programmer extends Employee{
+    //         request(work){
+    //             console.log(`Employee take ${work} project of works.`);
+                
+    //         }
+    //    }
+       
+
+
+
+
+
+            
+        
+    </script>
+    
+</body>
+</html>

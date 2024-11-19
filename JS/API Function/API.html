@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliction programing interface</title>
+</head>
+
+<body>
+    <!-- 
+    
+*** API:
+        Appliction Programing interface.
+          -API is a set of rules and protocols
+           that defines how "Two are more systems communicate with each other". 
+
+     --synchronous  (Line by line code is an execution of code is called synchronous.)
+
+     --Asynchronous (The excution will not specific line to the completed , and then it will move to the next line).
+
+     --JSON : Javascript object notation.
+
+     --Promise:
+       -pending (unlession untill this API is going to get fetch ,this promise is pending stage.)
+       -fulfilled  (when ever to Get a response from the API it will going to fullfilled stage)
+       -reject  (Unable to Not get response in a API),internet error ,server error ,wrong API 
+       (promis will moving to Rejected)
+
+     --Fetch
+     --then  (then is a function whis use handle the API response)
+     --Catch (Catch is handle the error) Catch the error)
+
+
+    -->
+
+
+    <script>
+        
+        // let a = fetch('https://jsonplaceholder.typicode.com/comments');
+        // console.log(a);
+
+
+        fetch('https://jsonplaceholder.typicode.com/comments')
+        .then(response=>response.json())
+        .then(output=>console.log(output));
+
+
+
+
+    </script>
+
+</body>
+
+</html>

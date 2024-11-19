@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call,apply,bind methods</title>
+</head>
+<body>
+    <!-- 
+    
+    Call:
+    apply:
+    bind:
+
+    
+    -->
+
+<script>
+                // EX:1
+
+    let name={
+        firstname :"Ganesh",
+        lastname :"Kumar",
+    }
+
+      let  printFullname =function(hometown,state){
+            console.log(this.firstname+"  another one friend is "+this.lastname+" from " +hometown+","+state);
+            // console.log(this.lastname+"  "+this.firstname);
+            
+            
+        }
+
+    printFullname.call(name,"Kuppam","AP");
+
+    let name2={
+        firstname:"Vignesh",
+        lastname:"Santhosh",
+    }
+
+    // call
+
+    printFullname.call(name2,"Dharmapuri","TN")
+
+             
+
+                // EX:2
+
+    let name1={
+        firstname:"Raja",
+        lastname:"Muthu",
+
+        nameFullname:function(){
+            console.log(this.firstname+" "+this.lastname);
+            
+        }
+        
+    }
+    name1.nameFullname()
+
+
+    // let name2={
+    //     firstname:"Vignesh",
+    //     lastname:"Santhosh",
+    // }
+   
+    // // call:
+
+    // // name.printFullname.call(name1);
+    // name.printFullname.call(name2);
+    // name1.nameFullname.call(name);
+
+
+
+    // apply
+
+printFullname.apply(name,["KPM",'AP']);
+printFullname.apply(name1,["DPI",'TN']);
+
+
+// bind:
+
+let bindName=printFullname.bind(name1,"Dharmapuri","TN");
+bindName();
+
+
+</script>
+
+
+</body>
+</html>

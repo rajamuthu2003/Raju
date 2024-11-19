@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <!-- 
+    REGEX:
+
+    How to create a regular expression:
+
+    -REGEX litral:
+
+       const regex=/pattern/;
+       const regex=/pattern/flags;
+
+    -REGEX constructor:
+
+          new RegExp(pattern,"flags");
+
+    Flags:
+
+    g:global searching;
+    i:case-insensitive searching;
+
+    Anchors:(True , false)
+
+    ^:matches the start of the line
+    $:matches the end of the line
+
+    Bounaries: \b
+
+    \d: matches any decimal digit[0-9];
+    \w: alphanumerical character
+     .: any character
+
+     //character class: [ae]
+
+     //negated character class: ^
+
+     //range: [a-z][A-Z][0-9]
+
+     //Alternation: |
+
+     //quantifiers:
+         +  -helllllo (hel+o); add many time.
+         *  -heo (hel*o); return or not return is correct.
+         ?
+
+     -->
+  
+    <script>
+        // literal: (pattern/flags)
+
+        const str="Hello All.Hello students.Hello raju";
+
+        const regex=/Hello/g;
+        console.log(str.match(regex));
+
+        // constructor: new RegEx(patttern,flags)
+
+        const regexp=new RegExp("Hello","gi");
+        const strr="Hello All.HELLO students.hello raju";
+        console.log(strr.match(regexp));
+
+        // dynamic:
+        //  const pattern=prompt("Enter your Value");
+
+        //  const Regexp1=new RegExp(`${pattern}`,"gi");
+        //  const stri="Hello All.Hello students.Hello raju";
+        //  console.log(stri.match(Regexp1));
+
+        // Anchors: (/^pattern/)
+
+        const regex2=/^project/; //start value are project this true value.
+        console.log(regex2.test(" project work is completed project"));
+        // const str2="project work is completed"
+        // console.log(str2.match(regex2));
+        
+  
+        // Boundaries: /\b pattern /
+
+        const  regex3=/\bward/gi;
+        const str3="backward wardrobe Ward"; //start value are "ward"
+        console.log(str3.match(regex3));
+
+        const regex4=/\bward\b/gi; //start and end value "ward".
+        const str4="backward Wardmember ward";
+        console.log(str4.match(regex4));
+            
+    </script>
+
+    <script>
+         const regex5=/ambi[ae]nce/;
+         console.log(regex5.test("ambiance"));
+
+         const regex6=/wom[ea]n/;
+         console.log(regex6.test("women"));//[ea] mention it's true.
+         
+         //Negative:
+
+         const ex=/wom[^ea]n/ ;
+         console.log(ex.test("womon")); //[ea] not mention it's true.
+
+         const regex7=/[0-9]/;
+         console.log(regex7.test("46")); //[0-9] values only take.
+
+        //  Alternative:
+        const reg=/(suresh|ramesh)\skumar/; //"s" space.
+        console.log(reg.test("suresh kumar"));
+
+        
+        //quantifiers:
+        const regex8=/hel+o/; //"l"-use 1 or more times it's true. 
+        console.log(regex8.test("hellllo"));
+
+        const regex9=/hel*o/; //"l" -use many time or not use it's true.
+        console.log(regex9.test("helllo"));
+
+        const regex10=/colou?r/; //"u"-use or not use it's true.
+        console.log(regex10.test("colour"));
+        
+
+
+        
+         
+
+         
+         
+    </script>
+
+
+    
+</body>
+</html>

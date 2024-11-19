@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table JS</title>
+    <style>
+        table{
+            height: 250px;
+            width: 50%;
+            letter-spacing: 1px;
+            margin-left: 250px;
+            margin-top: 15px;
+        }
+        /* body{
+            padding: 25px;
+            background-image: url(../ASSETS/image/A1.jpg);
+        } */
+        th{
+            align-items: center;
+            background-color: black;
+            color: whitesmoke;
+        }
+        td{
+            text-align: center;
+            background-color: yellow;
+            color: orangered;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <table border ="1px" cellspacing="0" cellpading="10" >
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Roll.No</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Raju</td>
+            <td>Python </td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Vicky</td>
+            <td>Data science</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Poov</td>
+            <td>Digital marketing</td>
+            <td>18</td>
+        </tr>
+    </table> -->
+    <!-- <script>
+        let fig=createElement('figure');
+        
+        console.log(fig);
+        
+     </script> -->
+
+     <script>
+        //for Table:
+        let table=document.createElement("table");
+        let row=document.createElement("tr");
+        let head=document.createElement("th");
+        let data=document.createElement("td");
+
+        console.log(table,row,head,data);
+        
+
+        
+
+        table.appendChild(td);
+        console.log(table,row,head,data);
+        // th.appendChild();
+        // th.appendChild();
+        
+
+        let data0=document.createElement('td');
+        let data1=document.createElement('td');
+        let data2=document.createElement('td');
+        let data3=document.createElement('td');
+
+        console.log(table,row,head,data0,data1,data2,data3);
+        
+        
+
+    </script>
+    <!-- <script>
+        const students = [
+            { name: 'Raju', course: 'Python', rollNo: 27 },
+            { name: 'Vicky', course: 'Data Science', rollNo: 21 },
+            { name: 'Poov', course: 'Digital Marketing', rollNo: 18 }
+        ];
+
+        const tableBody = document.querySelector('#studentTable tbody');
+
+        students.forEach((student, index) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${index + 1}</td>
+                <td>${student.name}</td>
+                <td>${student.course}</td>
+                <td>${student.rollNo}</td>
+            `;
+            tableBody.appendChild(row);
+        });
+    </script> -->
+</body>
+</html>

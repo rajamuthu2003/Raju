@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods in JS(12-09-24)</title>
+</head>
+<body>
+    <!--
+      Array Methods in JS
+       -push
+       -pop
+       -unshift 
+       -shift
+       -slice
+       -concat
+       -splice
+       -sort
+       -reverse
+
+
+    -->
+
+    <script>
+
+        let cricketers=["sachin",'Dravid',"raina"];
+        console.log(cricketers);
+        
+        //Array constructor:
+        let new_cricketers=["Virat","Rohit",'Dhoni'];
+
+        console.log(cricketers,new_cricketers);
+
+        //push:
+        new_cricketers.push("Hardik");
+        console.log(new_cricketers);
+
+        //pop:
+        new_cricketers.pop();
+        console.log(new_cricketers);
+
+        //unshift:
+        new_cricketers.unshift("Hardic");
+        console.log(new_cricketers);
+
+        //shift:
+        new_cricketers.shift();
+        console.log(new_cricketers);
+
+        //slice:
+        let a=[1,2,3,4,5,6,7,8,9];
+        console.log(a);
+
+        let b=a.slice(6,8);
+        console.log(b);
+        
+        //concat:
+        let t=[3,4,5,6,7,8,9]
+        let x=[1,2,4,3,5,6,7];
+        let y=[8,9,1,2,3,4,5,6];
+        let z=x.concat(y,t);
+        console.log(z);
+
+        //splice:
+        let join=["Suresh","Dhoni","Jaddu"];
+        join.splice(1,0,"Virat");
+        console.log(join);
+        
+        //sort:
+        let j=[3,2,4,1,5,67,84,12,256,102];
+        console.log(j);
+
+        console.log(j.sort());
+
+        
+        //reverse
+        let k=[4,200,34,749,600,40,27, 0.56];
+        console.log(k);
+
+        console.log(k.sort()); // re-arrange:
+        
+        
+        console.log(k.reverse());
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>
